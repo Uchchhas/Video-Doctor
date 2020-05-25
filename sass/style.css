@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("../css/icofont.css");
+body {
+  line-height: 1.7;
+  position: relative;
+  background-color: rgba(236, 242, 249, 0.3);
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+.mb-primary {
+  margin-bottom: 1.5rem;
+}
+
+.app-text {
+  color: #27D3B5;
+}
+
+.muted-text {
+  color: #B9C1D9;
+}
+
+.light-brown-text {
+  color: #FBB15D;
+}
+
+.sub-text-color {
+  color: #677295;
+}
+
+.span-text {
+  color: #136759;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.title {
+  position: relative;
+  color: #3A4565;
+}
+
+.font-type-1 {
+  font-family: "Nunito", sans-serif;
+}
+
+.font-type-2 {
+  font-family: "Rubik", sans-serif;
+}
+
+.btn-app {
+  border: 2px solid;
+  border-radius: 25px;
+  font-family: "Rubik", sans-serif;
+  padding: 0.65rem 1.9rem;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.btn-app.white {
+  color: #27D3B5;
+  border-color: #fff;
+  background-color: #fff;
+}
+.btn-app.white:hover {
+  color: #fff;
+  background-color: transparent;
+}
+.btn-app.yellow {
+  color: #0d0d0d;
+  border-color: #fbd351;
+  background-color: #fbd351;
+}
+.btn-app.yellow:hover {
+  background-color: #fac929;
+}
+.btn-app.app-color {
+  color: #fff;
+  font-size: 0.9rem;
+  border-color: #27D3B5;
+  background-color: #27D3B5;
+  box-shadow: 0 20px 40px 0 rgba(18, 193, 162, 0.15);
+}
+.btn-app.app-color:hover {
+  box-shadow: none;
+  color: #27D3B5;
+  background-color: transparent;
+}
+
+.section-title .title-icon {
+  width: 30px;
+  margin: -24px 0 0 -8px;
+}
+
+/*---------------------
+Header Style Start Here
+---------------------*/
+header {
+  padding-bottom: 180px;
+  background: url("../img/bg-header.png") no-repeat;
+  background-size: 100% 100%;
+}
+header .navbar {
+  transition: all 0.35s ease-in-out;
+}
+header .navbar .navbar-brand img {
+  transition: all 0.35s ease-in-out;
+}
+header .navbar .navbar-toggler:focus {
+  outline: 0;
+}
+header .navbar.navbar-fixed-top {
+  background-color: #27D3B5;
+  box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.06);
+}
+header .navbar.navbar-fixed-top .navbar-brand img {
+  width: 70px;
+}
+header .navbar .navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  padding: 0.5rem 2rem;
+  color: #fbfefe;
+  transition: all 0.35s ease-in-out;
+}
+header .navbar .navbar-nav .nav-item .nav-link.active {
+  color: #fff;
+}
+header .navbar .navbar-nav .nav-item .nav-link.active span {
+  border-bottom: #fbfefe;
+}
+header .navbar .navbar-nav .nav-item:last-child .nav-link {
+  padding-right: 0;
+}
+header .main-banner {
+  padding: 100px 0 0 0;
+}
+@media (min-width: 576px) {
+  header .navbar {
+    padding: 1.2rem 0;
+  }
+  header .navbar.navbar-fixed-top {
+    padding: 5px;
+  }
+}
+header #nav-icon3 {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+header #nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+header #nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+header #nav-icon3 span:nth-child(2), header #nav-icon3 span:nth-child(3) {
+  top: 10px;
+}
+header #nav-icon3 span:nth-child(3) {
+  top: 10px;
+}
+header #nav-icon3 span:nth-child(4) {
+  top: 20px;
+}
+header #nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+header #nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+header #nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+header #nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/*---------------------
+Header Style End Here
+---------------------*/
+/*---------------------------------
+About us Section Style Start Here
+---------------------------------*/
+/*---------------------------------
+About us Section Style End Here
+---------------------------------*/
+/*-----------------------------------
+Our Services Section Style Start Here
+-----------------------------------*/
+.our-services {
+  padding-bottom: 100px;
+}
+.our-services .service-card {
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px 0 rgba(18, 193, 162, 0.15);
+  transition: all 0.35s ease-in-out;
+}
+.our-services .service-card:hover {
+  box-shadow: none;
+}
+.our-services .service-card .service-icon img {
+  width: 170px;
+}
+.our-services .service-card .service-title {
+  color: rgba(24, 50, 78, 0.9);
+}
+
+/*-----------------------------------
+Our Services Section Style End Here
+-----------------------------------*/
+/*-----------------------------------
+How it Works Section Style Start Here
+-----------------------------------*/
+.how-it-works {
+  padding-bottom: 100px;
+}
+.how-it-works .border-1 {
+  border-right: 2px dashed rgba(48, 100, 156, 0.75);
+  border-bottom: 2px dashed rgba(48, 100, 156, 0.75);
+}
+.how-it-works .border-2 {
+  border-left: 2px dashed rgba(48, 100, 156, 0.75);
+}
+.how-it-works .border-3 {
+  border-top: 2px dashed rgba(48, 100, 156, 0.75);
+  border-right: 2px dashed rgba(48, 100, 156, 0.75);
+}
+.how-it-works .border-4 {
+  padding-left: 0;
+}
+.how-it-works .border-4::after {
+  content: "";
+  width: 29%;
+  display: block;
+  border-bottom: 2px dashed rgba(48, 100, 156, 0.75);
+}
+.how-it-works .border-5 {
+  border-left: 2px dashed rgba(48, 100, 156, 0.75);
+}
+.how-it-works .step-description .step-number img {
+  width: 70px;
+}
+.how-it-works .step-description .title-text {
+  color: #f9c006;
+}
+
+/*-----------------------------------
+How it Works Section Style End Here
+-----------------------------------*/
+/*----------------------------------
+Our Doctors Section Style Start Here
+----------------------------------*/
+.our-doctors {
+  position: relative;
+}
+.our-doctors::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 70%;
+  z-index: -1;
+  border-radius: 25px 0 0 25px;
+  background-color: #27D3B5;
+}
+.our-doctors .doctors-banner-wrapper {
+  padding: 65px;
+}
+.our-doctors .doctors-banner-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 70%;
+  border-radius: 25px 0 0 25px;
+  background-color: #27D3B5;
+}
+.our-doctors .doctors-card {
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px 0 rgba(18, 193, 162, 0.15);
+  transition: all 0.35s ease-in-out;
+}
+.our-doctors .doctors-card img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 6px solid #a5eee1;
+}
+.our-doctors .doctors-card .underline {
+  border: 0;
+  height: 1.5px;
+  width: 80px;
+  margin: 4px auto 8px auto;
+  background-color: #B9C1D9;
+}
+
+/*--------------------------------
+Our Doctors Section Style End Here
+--------------------------------*/
+/*-------------------------------
+Benefits Section Style Start Here
+-------------------------------*/
+.benefits {
+  padding-bottom: 100px;
+}
+.benefits .tab-menu-wrapper {
+  margin: 50px 0;
+}
+.benefits .tab-menu-wrapper .nav {
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 20px 40px 0 rgba(18, 193, 162, 0.15);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+.benefits .tab-menu-wrapper .nav .nav-item .nav-link {
+  border-radius: 0;
+  padding: 1.5rem 2rem;
+  color: #3A4565;
+}
+.benefits .tab-menu-wrapper .nav .nav-item .nav-link.active {
+  color: #fff;
+  background-color: #27D3B5;
+}
+.benefits .tab-menu-wrapper .nav .nav-item:first-child .nav-link {
+  border-radius: 20px 0 0 20px;
+}
+.benefits .tab-menu-wrapper .nav .nav-item:last-child .nav-link {
+  border-radius: 0 20px 20px 0;
+}
+.benefits .tab-content-wrapper .card {
+  border: 0;
+  padding: 70px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px 0 rgba(18, 193, 162, 0.15);
+  transition: all 0.35s ease-in-out;
+}
+.benefits .tab-content-wrapper .card .tab-content .tab-pane .list-group .list-group-item {
+  border: 0;
+  padding: 1rem 1.25rem;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+}
+.benefits .tab-content-wrapper .card .tab-content .tab-pane .list-group .list-group-item::before {
+  content: "";
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+  vertical-align: middle;
+  background-size: 30px;
+  background-image: url("../img/list-icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*-----------------------------
+Benefits Section Style End Here
+-----------------------------*/
+/*---------------------
+Footer Style Start Here
+---------------------*/
+footer {
+  background: url("../img/bg-footer.png") no-repeat;
+  background-size: 100% 100%;
+}
+footer .footer-content {
+  padding-top: 170px;
+}
+footer .footer-content p, footer .footer-content .list-group-item {
+  font-size: 18px;
+}
+footer .footer-content .list-group-item {
+  padding: 0.2rem 1.25rem;
+}
+footer .footer-content .android-app-button-wrapper .media {
+  padding: 0.8rem;
+  border-radius: 12px;
+  border: 2px solid #fff;
+}
+footer .footer-content .android-app-button-wrapper .media .media-body h3, footer .footer-content .android-app-button-wrapper .media .media-body h6 {
+  line-height: 1;
+}
+footer .footer-bottom {
+  padding: 30px 0;
+  border-top: 2px solid #d0f6f0;
+}
+footer .footer-bottom .social-link {
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transition: all 0.35s ease-in-out;
+}
+footer .footer-bottom .social-link:last-child {
+  margin-right: 0;
+}
+footer .footer-bottom .social-link:hover {
+  color: #27D3B5;
+  background-color: #fff;
+}
+
+/*---------------------
+Footer Style End Here
+---------------------*/
+
+/*# sourceMappingURL=style.css.map */
